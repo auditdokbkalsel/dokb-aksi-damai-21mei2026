@@ -62,10 +62,15 @@
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
     }
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
       font-size: 0.9rem;
+      min-width: 500px;
     }
     th {
       background: #000000;
@@ -92,6 +97,20 @@
       color: #FFD700; 
       font-size: 1rem;
       text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+    }
+    .card ul {
+      list-style-type: none;
+    }
+    .card ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+    .card ul li::before {
+      content: "⚠️";
+      position: absolute;
+      left: 0;
+      top: 0;
     }
     .footer {
       background: #000000;
@@ -121,7 +140,8 @@
       color: #9E9E9E;
     }
     @media (max-width: 600px) {
-      .header h1 { font-size: 1.4rem; }
+      .header h1 { font-size: 1.3rem; }
+      .header p { font-size: 0.85rem; }
       .map-frame { height: 350px; }
       table { font-size: 0.8rem; }
     }
@@ -133,9 +153,9 @@
     <h1>🚕 DOKB BANUA - AKSI DAMAI 21 MEI 2026</h1>
     <p>KALSEL BERSATU DRIVER ONLINE | TEGAS SOLID BERMARTABAT</p>
     <div style="margin-top:12px;">
-      <span class="tag">96 PASUKAN</span>
+      <span class="tag">94 PASUKAN</span>
       <span class="tag">8 KORLAP</span>
-      <span class="tag">1 KOMANDO</span>
+      <span class="tag">SATU KOMANDO</span>
     </div>
   </div>
 
@@ -144,49 +164,60 @@
     <div class="card">
       <h2>🗺️ DENAH RUTE LONG MARCH</h2>
       <p style="font-size:0.95rem; margin-bottom:15px;" class="kalsel-grey">
-        <span class="highlight">Start:</span> Gedung Veteran PH6R+G33 → <span class="highlight">Finish:</span> Kantor Maxim PH7M+H7<br>
-        <span class="highlight">Jarak:</span> ±850 Meter | <span class="highlight">Waktu:</span> 09.00 WITA | <span class="highlight">Zona Steril:</span> 08.00-11.00 WITA
+        <span class="highlight">Titik Kumpul:</span> Gedung Veteran (Plus Code: PH6R+G33) &rarr; <span class="highlight">Titik Aksi:</span> Kantor Maxim (Plus Code: PH7M+H7)<br>
+        <span class="highlight">Estimasi Jarak:</span> &plusmn;850 Meter | <span class="highlight">Waktu Mulai:</span> 09.00 WITA | <span class="highlight">Zona Steril:</span> 08.00 - 11.00 WITA
       </p>
       <iframe class="map-frame" frameborder="0" allowfullscreen allow="geolocation"
         src="https://umap.openstreetmap.fr/id/map/untitled-map_1407122">
       </iframe>
-      <p style="font-size:0.8rem; margin-top:10px; text-align:center;" class="kalsel-grey">
-        <b class="highlight">Klik Pin untuk detail. Garis Emas = Jl. Perdagangan. Rute Resmi DOKB.</b>
+      <p style="font-size:0.85rem; margin-top:10px; text-align:center;" class="kalsel-grey">
+        <b class="highlight">Petunjuk: Klik Pin pada peta untuk detail lokasi. Garis Emas menandakan jalur pergerakan sepanjang Jl. Perdagangan.</b>
       </p>
     </div>
 
     <div class="card">
-      <h2>⚔️ 8 KORLAP SOLID - TIM DEPAN</h2>
-      <table>
-        <tr><th>TIM</th><th>NAMA KORLAP</th><th>NOPOL</th><th>PERAN</th></tr>
-        <tr><td>1</td><td><b class="highlight">Ardi</b></td><td>DA 1650 OC</td><td>Korlap Utama</td></tr>
-        <tr><td>2</td><td><b class="highlight">Prima</b></td><td>DA 1607 ZX</td><td>Korlap Mobile</td></tr>
-        <tr><td>3</td><td><b class="highlight">Baday</b></td><td>DA 1875 AAH</td><td>Korlap Tengah</td></tr>
-        <tr><td>4</td><td><b class="highlight">Vandamme</b></td><td>DA 1866 TCT</td><td>Korlap Logistik</td></tr>
-        <tr><td>5</td><td><b class="highlight">Roni</b></td><td>DA 1557 KEK</td><td>Korlap Parkir</td></tr>
-        <tr><td>6</td><td><b class="highlight">Iyat</b></td><td>DA 1519 XC</td><td>Korlap Belakang</td></tr>
-        <tr><td>7</td><td><b class="highlight">Om Junai</b></td><td>DA 1576 ZW</td><td>Korlap Keamanan</td></tr>
-        <tr><td>8</td><td><b class="highlight">Sofyan</b></td><td>DA 1930 ZN</td><td>Korlap Dokumentasi</td></tr>
-      </table>
+      <h2>⚔️ TUGAS & STRUKTUR 8 KORLAP SOLID</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>TIM</th>
+              <th>NAMA KORLAP</th>
+              <th>NOMOR POLISI</th>
+              <th>PERAN STRATEGIS FIELD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><b>Skuad 01</b></td><td><span class="highlight">Ardi</span></td><td>DA 1650 OC</td><td>Korlap Utama / Komando Lapangan</td></tr>
+            <tr><td><b>Skuad 02</b></td><td><span class="highlight">Prima</span></td><td>DA 1607 ZX</td><td>Korlap Mobile / Pengawas Pergerakan</td></tr>
+            <tr><td><b>Skuad 03</b></td><td><span class="highlight">Baday</span></td><td>DA 1875 AAH</td><td>Korlap Tengah / Pengondisian Barisan</td></tr>
+            <tr><td><b>Skuad 04</b></td><td><span class="highlight">Vandamme</span></td><td>DA 1866 TCT</td><td>Korlap Logistik / Konsumsi & Atribut</td></tr>
+            <tr><td><b>Skuad 05</b></td><td><span class="highlight">Roni</span></td><td>DA 1557 KEK</td><td>Korlap Parkir / Manajemen Penataan Unit</td></tr>
+            <tr><td><b>Skuad 06</b></td><td><span class="highlight">Iyat</span></td><td>DA 1519 XC</td><td>Korlap Belakang / Penyisir Barisan Akhir</td></tr>
+            <tr><td><b>Skuad 07</b></td><td><span class="highlight">Om Junai</span></td><td>DA 1576 ZW</td><td>Korlap Keamanan / Satgas Anti Provokasi</td></tr>
+            <tr><td><b>Skuad 08</b></td><td><span class="highlight">Sofyan</span></td><td>DA 1930 ZN</td><td>Korlap Dokumentasi / Publikasi Media</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="card">
-      <h2>📢 5 KOMANDO AKSI DOKB</h2>
-      <div class="komando"><strong>1. APEL AKBAR 07.45 WITA</strong><br>Kumpul di Gedung Veteran. Absen 96 pasukan. Doa bersama. Arahan Korlap Utama Ardi.</div>
-      <div class="komando"><strong>2. LONG MARCH 09.00 WITA</strong><br>Jalan kaki tertib Jl. Perdagangan. Formasi 8 Korlap. Yel-yel damai. Anti provokasi.</div>
-      <div class="komando"><strong>3. ORASI DAMAI DI KANTOR MAXIM</strong><br>Sampaikan 3 tuntutan: Hapus tarif obral, Transparansi potongan, Hentikan suspend sepihak.</div>
-      <div class="komando"><strong>4. ZONA STERIL ORDERAN 08.00-11.00</strong><br>Semua anggota WAJIB OFFBID. TIM 7 Om Junai patroli. Fokus aksi, bukan orderan.</div>
-      <div class="komando"><strong>5. BUBAR TERTIB 11.00 WITA</strong><br>Bersih-bersih lokasi. Dokumentasi Sofyan. Evaluasi di grup. Balik narik dengan bermartabat.</div>
+      <h2>📢 5 TAHAPAN KOMANDO AKSI DOKB</h2>
+      <div class="komando"><strong>1. APEL AKBAR (07.45 WITA)</strong><br>Kumpul wajib di Gedung Veteran. Pengondisian absen 94 pasukan, doa bersama, serta pengarahan taktis langsung dari Korlap Utama (Ardi).</div>
+      <div class="komando"><strong>2. LONG MARCH BERMARTABAT (09.00 WITA)</strong><br>Jalan kaki secara tertib menyusuri Jl. Perdagangan. Formasi dipimpin berurutan oleh 8 Korlap. Sampaikan yel-yel perjuangan secara damai dan waspada terhadap penyusup.</div>
+      <div class="komando"><strong>3. ORASI UTAMA DI KANTOR MAXIM</strong><br>Penyampaian 3 tuntutan krusial: Hapus tarif obral penindas driver, Transparansi potongan aplikasi, dan Hentikan tindakan <i>suspend</i> sepihak tanpa klarifikasi.</div>
+      <div class="komando"><strong>4. ZONA STERIL ORDERAN (08.00 - 11.00 WITA)</strong><br>Seluruh anggota DOKB WAJIB melakukan OFFBID massal. Tim Skuad 07 di bawah komando Om Junai akan berpatroli keliling demi menjaga solidaritas aksi di lapangan.</div>
+      <div class="komando"><strong>5. BUBAR BARISAN SECARA TERTIB (11.00 WITA)</strong><br>Aksi ditutup dengan aksi bersih-bersih sampah di area lokasi. Finalisasi dokumentasi oleh Sofyan, disusul evaluasi terpusat. Pasukan kembali mengaspal dengan kepala tegak!</div>
     </div>
 
     <div class="card" style="background:#1A1A1A; border:2px solid #FFD700;">
-      <h2>⚠️ ATURAN AKSI - WAJIB PATUH</h2>
-      <ul style="font-size:1rem; padding-left:20px; font-weight:600; color:#E0E0E0;">
-        <li><b class="highlight">Anti Anarkis:</b> Tidak merusak fasilitas umum/aplikator</li>
-        <li><b class="highlight">Anti Provokasi:</b> Abaikan pihak yang mancing emosi</li>
-        <li><b class="highlight">Anti Politik:</b> Murni aksi kesejahteraan driver</li>
-        <li><b class="highlight">Wajib Tertib:</b> Ikuti komando 8 Korlap Solid</li>
-        <li><b class="highlight">Jaga Nama Baik:</b> DOKB = Driver Bermartabat</li>
+      <h2>⚠️ ATURAN DISIPLIN AKSI - WAJIB PATUH!</h2>
+      <ul style="font-size:1rem; font-weight:600; color:#E0E0E0;">
+        <li><span class="highlight">Anti Anarkis:</span> Dilarang keras merusak fasilitas umum maupun properti milik aplikator.</li>
+        <li><span class="highlight">Anti Provokasi:</span> Abaikan pihak-pihak luar yang berupaya memancing emosi barisan.</li>
+        <li><span class="highlight">Anti Tunggangan Politik:</span> Aksi ini murni bergerak demi marwah dan kesejahteraan tarif driver online.</li>
+        <li><span class="highlight">Wajib Disiplin Komando:</span> Patuhi instruksi dan pergerakan dari 8 Korlap Skuad yang bertugas.</li>
+        <li><span class="highlight">Jaga Marwah Organisasi:</span> Tunjukkan kepada Banua bahwa DOKB adalah Driver Online yang Cerdas dan Bermartabat!</li>
       </ul>
     </div>
 
@@ -194,13 +225,13 @@
 
   <div class="footer">
     <p style="font-size:1.1rem; font-weight:900; text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);">
-      <b>DOKB BANUA © 2026</b> | KALSEL BERSATU DRIVER ONLINE
+      <b>ORGANISASI DOKB BANUA &copy; 2026</b><br>KALSEL BERSATU DRIVER ONLINE
     </p>
     <p style="margin-top:10px; font-size:0.95rem; color:#BDBDBD;">
-      #TolakMaximObral #DriverBermartabat #KalselBergerak #AksiDamai21Mei
+      #TolkMaximObral #DriverBermartabat #KalselBergerak #AksiDamai21Mei #SatuKomando
     </p>
-    <p style="margin-top:12px; font-size:0.8rem; color:#757575;">
-      "Hitam Emas Warna Perjuangan. Solid di Jalan, Bermartabat dalam Tindakan."
+    <p style="margin-top:12px; font-size:0.8rem; color:#757575; font-style: italic;">
+      "Hitam Emas Warna Perjuangan. Solid di Jalanan, Bermartabat dalam Tindakan."
     </p>
   </div>
 
