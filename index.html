@@ -1,232 +1,203 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DENAH AKSI DAMAI DOKB BANUA - 21 MEI 2026</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-    :root {
-        --bg-dark: #111111;
-        --bg-card: #1A1A1A;
-        --dokb-gold: #D4AF37;
-        --merah: #DC2626;
-        --putih: #FFFFFF;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DENAH AKSI DOKB BANUA - 21 MEI 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      background: #f5f5f5; 
+      color: #212121;
+      line-height: 1.6;
     }
-    * { font-family: 'Montserrat', sans-serif; }
-   .font-oswald { font-family: 'Oswald', sans-serif; }
-    body { background-color: var(--bg-dark); color: var(--putih); }
-   .gold-gradient {
-        background: linear-gradient(135deg, #D4AF37 0%, #F4E4A1 50%, #D4AF37 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+    .header {
+      background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%);
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
-   .korlap-card { break-inside: avoid; }
-    @media print {
-        @page { size: A4 landscape; margin: 0.5cm; }
-        body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-       .no-print { display: none!important; }
+    .header h1 {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
-   .map-container iframe { filter: grayscale(0.2) contrast(1.1); }
-</style>
+    .header p {
+      font-size: 0.9rem;
+      opacity: 0.95;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      color: #B71C1C;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      border-left: 4px solid #FFD700;
+      padding-left: 8px;
+    }
+    .map-frame {
+      width: 100%;
+      height: 450px;
+      border: 2px solid #B71C1C;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    th {
+      background: #B71C1C;
+      color: white;
+      padding: 8px 5px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 8px 5px;
+      border-bottom: 1px solid #eee;
+    }
+    tr:nth-child(even) { background: #fafafa; }
+    .komando {
+      background: #FFF9C4;
+      border-left: 4px solid #FFD700;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 4px;
+    }
+    .komando strong { color: #B71C1C; }
+    .footer {
+      background: #212121;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+    .tag {
+      display: inline-block;
+      background: #FFD700;
+      color: #212121;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin: 2px;
+    }
+    @media (max-width: 600px) {
+      .header h1 { font-size: 1.2rem; }
+      .map-frame { height: 350px; }
+      table { font-size: 0.75rem; }
+      td, th { padding: 6px 3px; }
+    }
+  </style>
 </head>
-<body class="antialiased">
-<div class="max-w-[1600px] mx-auto p-3 sm:p-4 lg:p-6">
-    <!-- HEADER -->
-    <header class="bg-[var(--bg-card)] border-2 border-[var(--dokb-gold)] rounded-lg p-4 lg:p-6 mb-4 shadow-2xl">
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-4">
-                <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-gradient-to-br from-[var(--dokb-gold)] to-yellow-600 flex items-center justify-center shadow-lg">
-                    <span class="font-oswald text-2xl lg:text-3xl font-bold text-black">DOKB</span>
-                </div>
-                <div>
-                    <h1 class="font-oswald text-2xl lg:text-4xl font-bold tracking-wide gold-gradient">DENAH AKSI DAMAI DOKB BANUA</h1>
-                    <p class="text-sm lg:text-base text-gray-300 font-semibold mt-1">🇮🇩 Kamis, 21 Mei 2026 | Long March Veteran → Maxim | 96 Pasukan Solid</p>
-                </div>
-            </div>
-        </div>
-    </header>
+<body>
 
-    <!-- DATA AKSI -->
-    <section class="bg-[var(--bg-card)] border-l-4 border-[var(--dokb-gold)] rounded-lg p-4 mb-4">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 text-center">
-            <div class="bg-black/40 rounded-lg p-3 border border-gray-800">
-                <i class="fa-solid fa-clock text-[var(--dokb-gold)] text-xl mb-1"></i>
-                <p class="text-xs text-gray-400">APEL AKBAR</p>
-                <p class="font-oswald text-lg font-bold">07.45 WITA</p>
-                <p class="text-xs text-gray-500">Gedung Veteran</p>
-            </div>
-            <div class="bg-black/40 rounded-lg p-3 border border-gray-800">
-                <i class="fa-solid fa-person-walking text-[var(--merah)] text-xl mb-1"></i>
-                <p class="text-xs text-gray-400">LONG MARCH</p>
-                <p class="font-oswald text-lg font-bold">09.00 WITA</p>
-                <p class="text-xs text-gray-500">±600 Meter</p>
-            </div>
-            <div class="bg-black/40 rounded-lg p-3 border border-gray-800">
-                <i class="fa-solid fa-bullhorn text-[var(--dokb-gold)] text-xl mb-1"></i>
-                <p class="text-xs text-gray-400">LOKASI ORASI</p>
-                <p class="font-oswald text-sm font-bold">Kantor Maxim</p>
-                <p class="text-xs text-gray-500">Jl. Perdagangan</p>
-            </div>
-            <div class="bg-black/40 rounded-lg p-3 border border-gray-800">
-                <i class="fa-solid fa-users text-[var(--dokb-gold)] text-xl mb-1"></i>
-                <p class="text-xs text-gray-400">TOTAL PASUKAN</p>
-                <p class="font-oswald text-lg font-bold">94 Mobil</p>
-                <p class="text-xs text-gray-500">8 Korlap Solid</p>
-            </div>
-        </div>
-    </section>
+  <div class="header">
+    <h1>🚕 DOKB BANUA - AKSI DAMAI 21 MEI 2026</h1>
+    <p>DRIVER ONLINE KALSEL BERGERAK | TEGAS SOLID BERMARTABAT</p>
+    <div style="margin-top:8px;">
+      <span class="tag">96 PASUKAN</span>
+      <span class="tag">8 KORLAP</span>
+      <span class="tag">1 KOMANDO</span>
+    </div>
+  </div>
 
-    <!-- MAIN: PETA + KOMANDO -->
-    <div class="grid lg:grid-cols-2 gap-4 mb-4">
-        <!-- PETA OSM -->
-        <div class="bg-[var(--bg-card)] border-2 border-[var(--dokb-gold)] rounded-lg p-4">
-            <h2 class="font-oswald text-xl font-bold mb-3 flex items-center gap-2">
-                <i class="fa-solid fa-map-location-dot text-[var(--dokb-gold)]"></i>
-                PETA RUTE AKSI - OPENSTREETMAP
-            </h2>
-            <div class="map-container border-2 border-[var(--dokb-gold)] rounded-lg overflow-hidden">
-                <iframe
-                    width="100%"
-                    height="400"
-                    frameborder="0"
-                    scrolling="no"
-                    marginheight="0"
-                    marginwidth="0"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=114.586%2C-3.323%2C114.596%2C-3.315&layer=mapnik&marker=-3.32003%2C114.59111">
-                </iframe>
-            </div>
-            <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
-                <div class="bg-black/30 p-2 rounded"><span class="text-[var(--merah)]">● A:</span> Gedung Veteran - Start</div>
-                <div class="bg-black/30 p-2 rounded"><span class="text-[var(--dokb-gold)]">● B:</span> Kantor Maxim - Orasi</div>
-                <div class="bg-black/30 p-2 rounded col-span-2 text-center"><b>RUTE:</b> Jl. Veteran → Jl. Perdagangan ±600m</div>
-            </div>
-        </div>
+  <div class="container">
 
-        <!-- 5 KOMANDO + ATURAN -->
-        <div class="space-y-4">
-            <div class="bg-[var(--bg-card)] border-l-4 border-[var(--merah)] rounded-lg p-4">
-                <h3 class="font-oswald text-lg font-bold mb-3 text-[var(--merah)]">📢 5 KOMANDO SEKJEND</h3>
-                <ol class="space-y-2 text-sm">
-                    <li class="flex gap-3 bg-black/30 p-2 rounded"><span class="font-oswald text-[var(--dokb-gold)] font-bold min-w-[70px]">05.30-07.30</span><span>Ngebid Subuh A.Yani - Wajib Onbid</span></li>
-                    <li class="flex gap-3 bg-black/30 p-2 rounded"><span class="font-oswald text-[var(--dokb-gold)] font-bold min-w-[70px]">07.45</span><span>Apel Akbar di Veteran - Korlap apelkan anggota</span></li>
-                    <li class="flex gap-3 bg-black/30 p-2 rounded"><span class="font-oswald text-[var(--dokb-gold)] font-bold min-w-[70px]">09.00</span><span>Long March Tertib ke Kantor Maxim</span></li>
-                    <li class="flex gap-3 bg-black/30 p-2 rounded"><span class="font-oswald text-[var(--dokb-gold)] font-bold min-w-[70px]">11.00</span><span>Bubarkan Massa, Pastikan Lokasi Bersih</span></li>
-                    <li class="flex gap-3 bg-black/30 p-2 rounded"><span class="font-oswald text-[var(--dokb-gold)] font-bold min-w-[70px]">15.30</span><span>Ngebid Pasca-Aksi KM 6 & Bandara</span></li>
-                </ol>
-            </div>
-            <div class="bg-[var(--bg-card)] border-l-4 border-[var(--dokb-gold)] rounded-lg p-4">
-                <h3 class="font-oswald text-lg font-bold mb-3 text-[var(--dokb-gold)]">⚠️ ATURAN KERAS KETUM</h3>
-                <ul class="space-y-1 text-sm">
-                    <li>• WAJIB tertib, tidak anarkis. Ini aksi damai bermartabat.</li>
-                    <li>• Dilarang keras bawa sajam, miras, atribut partai.</li>
-                    <li>• Dengarkan instruksi 8 Korlap. Satu komando!</li>
-                    <li>• Zona Steril Orderan 08.00-11.00 di Jl. Perdagangan.</li>
-                </ul>
-            </div>
-        </div>
+    <div class="card">
+      <h2>🗺️ DENAH RUTE LONG MARCH</h2>
+      <p style="font-size:0.85rem; margin-bottom:10px;">
+        <b>Start:</b> Gedung Veteran PH6R+G33 → <b>Finish:</b> Kantor Maxim PH7M+H7<br>
+        <b>Jarak:</b> ±850 Meter | <b>Waktu:</b> 09.00 WITA | <b>Zona Steril:</b> 08.00-11.00 WITA
+      </p>
+      <iframe class="map-frame" frameborder="0" allowfullscreen 
+        src="https://umap.openstreetmap.fr/id/map/untitled-map_1407122?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false">
+      </iframe>
+      <p style="font-size:0.75rem; margin-top:8px; text-align:center; color:#666;">
+        Klik Pin untuk detail. Zoom untuk lihat rute Jl. Perdagangan.
+      </p>
     </div>
 
-    <!-- STRUKTUR 8 KORLAP LENGKAP -->
-    <section class="bg-[var(--bg-card)] border-2 border-[var(--dokb-gold)] rounded-lg p-4 lg:p-5">
-        <h2 class="font-oswald text-2xl font-bold mb-4 text-center gold-gradient">STRUKTUR 8 KORLAP SOLID - 94 MOBIL</h2>
-        <div class="grid md:grid-cols-2 gap-4">
+    <div class="card">
+      <h2>⚔️ 8 KORLAP SOLID - TIM DEPAN</h2>
+      <table>
+        <tr>
+          <th>TIM</th>
+          <th>NAMA KORLAP</th>
+          <th>NOPOL</th>
+          <th>PERAN</th>
+        </tr>
+        <tr><td>1</td><td><b>Ardi</b></td><td>DA 1650 OC</td><td>Korlap Utama</td></tr>
+        <tr><td>2</td><td><b>Prima</b></td><td>DA 1607 ZX</td><td>Korlap Mobile</td></tr>
+        <tr><td>3</td><td><b>Baday</b></td><td>DA 1875 AAH</td><td>Korlap Tengah</td></tr>
+        <tr><td>4</td><td><b>Vandamme</b></td><td>DA 1866 TCT</td><td>Korlap Logistik</td></tr>
+        <tr><td>5</td><td><b>Roni</b></td><td>DA 1557 KEK</td><td>Korlap Parkir</td></tr>
+        <tr><td>6</td><td><b>Iyat</b></td><td>DA 1519 XC</td><td>Korlap Belakang</td></tr>
+        <tr><td>7</td><td><b>Om Junai</b></td><td>DA 1576 ZW</td><td>Korlap Keamanan</td></tr>
+        <tr><td>8</td><td><b>Sofyan</b></td><td>DA 1930 ZN</td><td>Korlap Dokumentasi</td></tr>
+      </table>
+    </div>
 
-            <!-- TIM 1 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 1 - BARISAN DEPAN</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: ARDI XENIA DA 1650 OC</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Barisan Depan + Pengawalan Ketua Umum</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>1. Ardi Xenia DA 1650 OC</li><li>2. Rolly Brio DA 1827 TCP</li><li>3. Adi Tator DA 1768 WL</li><li>4. JULAK DA 1614 JK</li><li>5. Zainal Etios DA 1803 WP</li><li>6. F1.Hidayat DA 1204 JN</li><li>7. Arrizal Sigra DA 1446 NE</li><li>8. Yusuf Anjir DA 1479 MJ</li><li>9. Mukhlis Bray</li><li>10. Abdul DA 1404 MK</li><li>11. Kai Amin DA 1316 PC</li><li>12. Arjan,H SIGRA DA 1943 JZ</li>
-                </ol>
-            </div>
+    <div class="card">
+      <h2>📢 5 KOMANDO AKSI DOKB</h2>
+      <div class="komando">
+        <strong>1. APEL AKBAR 07.45 WITA</strong><br>
+        Kumpul di Gedung Veteran. Absen 96 pasukan. Doa bersama. Arahan Korlap Utama Ardi.
+      </div>
+      <div class="komando">
+        <strong>2. LONG MARCH 09.00 WITA</strong><br>
+        Jalan kaki tertib Jl. Perdagangan. Formasi 8 Korlap. Yel-yel damai. Anti provokasi.
+      </div>
+      <div class="komando">
+        <strong>3. ORASI DAMAI DI KANTOR MAXIM</strong><br>
+        Sampaikan 3 tuntutan: Hapus tarif obral, Transparansi potongan, Hentikan suspend sepihak.
+      </div>
+      <div class="komando">
+        <strong>4. ZONA STERIL ORDERAN 08.00-11.00</strong><br>
+        Semua anggota WAJIB OFFBID. TIM 7 Om Junai patroli. Fokus aksi, bukan orderan.
+      </div>
+      <div class="komando">
+        <strong>5. BUBAR TERTIB 11.00 WITA</strong><br>
+        Bersih-bersih lokasi. Dokumentasi Sofyan. Evaluasi di grup. Balik narik dengan bermartabat.
+      </div>
+    </div>
 
-            <!-- TIM 2 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 2 - SAYAP KIRI</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: RAGA SAPUTRA DA 1531 CS</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Sayap Kiri Barisan</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>13. Bain Mumun Habang</li><li>14. Raga Saputra SIGRA DA 1531 CS</li><li>15. Wahyu DA 1439 JG</li><li>16. Razi Calya DA 1502</li><li>17. Ridha A DA 1767 ZAH</li><li>18. Enal Gambut DA 1628 BP</li><li>19. Supian DA 1096 EL</li><li>20. Mba Rammawati</li><li>21. Yasin DA 10rb</li><li>22. Edy Wahyudi DA 1649 PG</li><li>23. KhairBoas KH 1266 RE</li><li>24. Tasbih DA 1418 AS</li>
-                </ol>
-            </div>
+    <div class="card" style="background:#FFF3E0; border:2px solid #FFD700;">
+      <h2>⚠️ ATURAN AKSI - WAJIB PATUH</h2>
+      <ul style="font-size:0.9rem; padding-left:20px;">
+        <li><b>Anti Anarkis:</b> Tidak merusak fasilitas umum/aplikator</li>
+        <li><b>Anti Provokasi:</b> Abaikan pihak yang mancing emosi</li>
+        <li><b>Anti Politik:</b> Murni aksi kesejahteraan driver</li>
+        <li><b>Wajib Tertib:</b> Ikuti komando 8 Korlap Solid</li>
+        <li><b>Jaga Nama Baik:</b> DOKB = Driver Bermartabat</li>
+      </ul>
+    </div>
 
-            <!-- TIM 3 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 3 - SAYAP KANAN</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: PPBC DA 1196 WQ</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Sayap Kanan Barisan</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>25. Arif DA 1554 JR</li><li>26. PPBC DA 1196 WQ</li><li>27. PPBC DA 1134 BM</li><li>28. PPBC DA 1455 JO</li><li>29. PPBC DA 1788 NC</li><li>30. Ardian DA 1866 DH</li><li>31. Rinzani SIGRA DA 1607 NA</li><li>32. Robert Veloz DA 1351 NA</li><li>33. Subhan Sigra B 2249 KKF</li><li>34. Amirudin DA 1509 JW</li><li>35. Irsyadi DA 1081 JI</li><li>36. Gifari Sigra DA 1391 NA</li>
-                </ol>
-            </div>
+  </div>
 
-            <!-- TIM 4 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 4 - TENGAH + LOGISTIK</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: VANDAMME DA 1866 TCT</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Tengah Barisan + Logistik</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>37. Hendri Sigra DA 1874 CZ</li><li>38. Yahya DA 1072 TPK</li><li>39. Basith Sigra DA 1380 EK</li><li>40. Gilang DA 1490 NA</li><li>41. Zali DA 1565 FI</li><li>42. Muh. Ilham DA 1725 TCS</li><li>43. Vandamme Avanza DA 1866 TCT</li><li>44. ELLO DA 1014 TCS</li><li>45. Purnomo Sigra DA 1075 JQ</li><li>46. Ardi Arela DA 1201 NE</li><li>47. Roman Sigra DA 1560 WK</li><li>48. Kacong Ayla DA 1528 PG</li>
-                </ol>
-            </div>
+  <div class="footer">
+    <p><b>DOKB BANUA © 2026</b> | DRIVER ONLINE KALSEL BERSATU</p>
+    <p style="margin-top:5px;">
+      #TolakMaximObral #DriverBermartabat #KalselBergerak #AksiDamai21Mei
+    </p>
+    <p style="margin-top:8px; font-size:0.7rem; opacity:0.8;">
+      Dibuat dengan semangat 96 Pasukan. Update terakhir: 16 Mei 2026
+    </p>
+  </div>
 
-            <!-- TIM 5 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 5 - BELAKANG + PARKIR</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: PAKDE KUMIS DA 1460 CI</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Pengamanan Belakang + Parkir</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>49. Kasno DA 1398 C</li><li>50. Suwito Xenia DA 1870 JW</li><li>51. Surya Xenia 1101 BQ</li><li>52. Byson DA 1429 IC</li><li>53. Ancai DA 1053 JT</li><li>54. Pakde Kumis DA 1460 CI</li><li>55. Sahrul DA.........</li><li>55. M. Badruddin</li><li>55. Arief NR B 1750 CZT</li><li>56. Ibay</li><li>57. Amin</li><li>58. Akim</li>
-                </ol>
-            </div>
-
-            <!-- TIM 6 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 6 - CADANGAN</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: HAJI IBAY</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Cadangan + Dokumentasi</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>59. Kai Putra</li><li>60. Ahmad Yani</li><li>61. Fahrizki</li><li>62. Wahyudi</li><li>63. Haji Ibay</li><li>64. Adus</li><li>65. Khairan</li><li>66. Nopli</li><li>67. Om Adi</li><li>68. D2R</li><li>69. Faisal</li><li>70. Jack</li>
-                </ol>
-            </div>
-
-            <!-- TIM 7 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 7 - STERILISASI</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: OM JUNAI</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Sterilisasi Jalur + Ambulans</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>71. Saufi DA 1411 BW</li><li>72. Santo AE 1024 CQ</li><li>73. Suryadi</li><li>74. Pakde Agus KLA</li><li>75. Om Junai</li><li>76. Oji TPT</li><li>77. Abah Hasan</li><li>78. Budi DA 1703 CR</li><li>79. Jali Oc0y DA 1275 CX</li><li>80. Dedet DA 1618 OC</li><li>81. Fitri DA 1552 TBK</li><li>82. Syauqi DA 1481 BC</li>
-                </ol>
-            </div>
-
-            <!-- TIM 8 -->
-            <div class="korlap-card bg-black/40 border border-[var(--dokb-gold)] rounded-lg p-3">
-                <h3 class="font-oswald text-lg font-bold text-[var(--dokb-gold)] mb-2">TIM 8 - MOBILE</h3>
-                <p class="text-sm font-bold mb-2"><i class="fa-solid fa-user-shield"></i> KORLAP: PRIMA DA 1607 ZX</p>
-                <p class="text-xs text-gray-400 mb-2">Wilayah: Mobile + Evakuasi Cepat</p>
-                <ol class="text-xs space-y-0.5 columns-2">
-                    <li>83. Acam DA 1643 TCP</li><li>84. Fauzi DA 1831 BR</li><li>85. Fahrul DA 1884 OC</li><li>86. Ivan</li><li>87. Rama</li><li>88. Agus R DA 1532 CZ</li><li>89. Husaini DA 1772 JZ</li><li>90. Khairi Sabilah DA 1634 BL</li><li>91. Prima DA 1607 ZX</li><li>92. Rizwar DA 1131 TBK</li><li>93. Irwan DA 1671 BS</li><li>94. Wawan Sohib DA 1598 PS</li>
-                </ol>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="mt-4 text-center">
-        <div class="bg-[var(--bg-card)] border-2 border-[var(--dokb-gold)] rounded-lg p-4">
-            <p class="font-oswald text-xl font-bold gold-gradient mb-2">DOKB BANUA - TEGAS · SOLID · BERMARTABAT</p>
-            <p class="text-xs text-gray-400">Denah Resmi Aksi Damai 21 Mei 2026 | Total 94 Mobil | 8 Korlap Solid</p>
-            <button onclick="navigator.clipboard.writeText(window.location.href).then(()=>{alert('Link Denah DOKB Berhasil Disalin!')})" class="no-print mt-3 bg-[var(--dokb-gold)] text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-500">
-                <i class="fa-solid fa-copy"></i> SALIN LINK DENAH
-            </button>
-        </div>
-    </footer>
-</div>
 </body>
-  </html>
+</html>
