@@ -13,20 +13,23 @@
       line-height: 1.6;
     }
     .header {
-      background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%);
-      color: white;
+      background: #D32F2F;
+      color: #FFD700;
       padding: 20px 15px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      border-bottom: 4px solid #FFD700;
     }
     .header h1 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       margin-bottom: 5px;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      font-weight: 900;
     }
     .header p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       opacity: 0.95;
+      font-weight: 600;
     }
     .container {
       max-width: 900px;
@@ -38,20 +41,23 @@
       border-radius: 8px;
       padding: 15px;
       margin-bottom: 15px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      border-top: 3px solid #D32F2F;
     }
     .card h2 {
       color: #B71C1C;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-bottom: 10px;
-      border-left: 4px solid #FFD700;
-      padding-left: 8px;
+      border-left: 5px solid #FFD700;
+      padding-left: 10px;
+      font-weight: 800;
     }
     .map-frame {
       width: 100%;
       height: 450px;
-      border: 2px solid #B71C1C;
+      border: 3px solid #D32F2F;
       border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
     table {
       width: 100%;
@@ -59,48 +65,50 @@
       font-size: 0.85rem;
     }
     th {
-      background: #B71C1C;
-      color: white;
-      padding: 8px 5px;
+      background: #D32F2F;
+      color: #FFD700;
+      padding: 10px 5px;
       text-align: left;
-      font-weight: 600;
+      font-weight: 800;
     }
     td {
       padding: 8px 5px;
       border-bottom: 1px solid #eee;
     }
-    tr:nth-child(even) { background: #fafafa; }
+    tr:nth-child(even) { background: #FFF9E6; }
     .komando {
-      background: #FFF9C4;
-      border-left: 4px solid #FFD700;
-      padding: 10px;
-      margin: 8px 0;
+      background: linear-gradient(90deg, #FFF9C4 0%, #FFFDE7 100%);
+      border-left: 5px solid #D32F2F;
+      padding: 12px;
+      margin: 10px 0;
       border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    .komando strong { color: #B71C1C; }
+    .komando strong { color: #B71C1C; font-size: 0.95rem; }
     .footer {
       background: #212121;
-      color: white;
+      color: #FFD700;
       text-align: center;
-      padding: 15px;
-      font-size: 0.8rem;
+      padding: 20px 15px;
+      font-size: 0.85rem;
       margin-top: 20px;
+      border-top: 4px solid #D32F2F;
     }
     .tag {
       display: inline-block;
       background: #FFD700;
-      color: #212121;
-      padding: 3px 8px;
-      border-radius: 12px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin: 2px;
+      color: #B71C1C;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 900;
+      margin: 3px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
     @media (max-width: 600px) {
-      .header h1 { font-size: 1.2rem; }
+      .header h1 { font-size: 1.3rem; }
       .map-frame { height: 350px; }
       table { font-size: 0.75rem; }
-      td, th { padding: 6px 3px; }
     }
   </style>
 </head>
@@ -109,7 +117,7 @@
   <div class="header">
     <h1>🚕 DOKB BANUA - AKSI DAMAI 21 MEI 2026</h1>
     <p>DRIVER ONLINE KALSEL BERGERAK | TEGAS SOLID BERMARTABAT</p>
-    <div style="margin-top:8px;">
+    <div style="margin-top:10px;">
       <span class="tag">96 PASUKAN</span>
       <span class="tag">8 KORLAP</span>
       <span class="tag">1 KOMANDO</span>
@@ -120,27 +128,22 @@
 
     <div class="card">
       <h2>🗺️ DENAH RUTE LONG MARCH</h2>
-      <p style="font-size:0.85rem; margin-bottom:10px;">
+      <p style="font-size:0.9rem; margin-bottom:12px;">
         <b>Start:</b> Gedung Veteran PH6R+G33 → <b>Finish:</b> Kantor Maxim PH7M+H7<br>
         <b>Jarak:</b> ±850 Meter | <b>Waktu:</b> 09.00 WITA | <b>Zona Steril:</b> 08.00-11.00 WITA
       </p>
-      <iframe class="map-frame" frameborder="0" allowfullscreen 
-        src="https://umap.openstreetmap.fr/id/map/untitled-map_1407122?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false">
+      <iframe class="map-frame" frameborder="0" allowfullscreen allow="geolocation"
+        src="https://umap.openstreetmap.fr/id/map/untitled-map_1407122">
       </iframe>
       <p style="font-size:0.75rem; margin-top:8px; text-align:center; color:#666;">
-        Klik Pin untuk detail. Zoom untuk lihat rute Jl. Perdagangan.
+        <b>Klik Pin untuk detail lokasi. Rute emas = Jl. Perdagangan. Anti nabrak masjid!</b>
       </p>
     </div>
 
     <div class="card">
       <h2>⚔️ 8 KORLAP SOLID - TIM DEPAN</h2>
       <table>
-        <tr>
-          <th>TIM</th>
-          <th>NAMA KORLAP</th>
-          <th>NOPOL</th>
-          <th>PERAN</th>
-        </tr>
+        <tr><th>TIM</th><th>NAMA KORLAP</th><th>NOPOL</th><th>PERAN</th></tr>
         <tr><td>1</td><td><b>Ardi</b></td><td>DA 1650 OC</td><td>Korlap Utama</td></tr>
         <tr><td>2</td><td><b>Prima</b></td><td>DA 1607 ZX</td><td>Korlap Mobile</td></tr>
         <tr><td>3</td><td><b>Baday</b></td><td>DA 1875 AAH</td><td>Korlap Tengah</td></tr>
@@ -154,31 +157,16 @@
 
     <div class="card">
       <h2>📢 5 KOMANDO AKSI DOKB</h2>
-      <div class="komando">
-        <strong>1. APEL AKBAR 07.45 WITA</strong><br>
-        Kumpul di Gedung Veteran. Absen 96 pasukan. Doa bersama. Arahan Korlap Utama Ardi.
-      </div>
-      <div class="komando">
-        <strong>2. LONG MARCH 09.00 WITA</strong><br>
-        Jalan kaki tertib Jl. Perdagangan. Formasi 8 Korlap. Yel-yel damai. Anti provokasi.
-      </div>
-      <div class="komando">
-        <strong>3. ORASI DAMAI DI KANTOR MAXIM</strong><br>
-        Sampaikan 3 tuntutan: Hapus tarif obral, Transparansi potongan, Hentikan suspend sepihak.
-      </div>
-      <div class="komando">
-        <strong>4. ZONA STERIL ORDERAN 08.00-11.00</strong><br>
-        Semua anggota WAJIB OFFBID. TIM 7 Om Junai patroli. Fokus aksi, bukan orderan.
-      </div>
-      <div class="komando">
-        <strong>5. BUBAR TERTIB 11.00 WITA</strong><br>
-        Bersih-bersih lokasi. Dokumentasi Sofyan. Evaluasi di grup. Balik narik dengan bermartabat.
-      </div>
+      <div class="komando"><strong>1. APEL AKBAR 07.45 WITA</strong><br>Kumpul di Gedung Veteran. Absen 96 pasukan. Doa bersama. Arahan Korlap Utama Ardi.</div>
+      <div class="komando"><strong>2. LONG MARCH 09.00 WITA</strong><br>Jalan kaki tertib Jl. Perdagangan. Formasi 8 Korlap. Yel-yel damai. Anti provokasi.</div>
+      <div class="komando"><strong>3. ORASI DAMAI DI KANTOR MAXIM</strong><br>Sampaikan 3 tuntutan: Hapus tarif obral, Transparansi potongan, Hentikan suspend sepihak.</div>
+      <div class="komando"><strong>4. ZONA STERIL ORDERAN 08.00-11.00</strong><br>Semua anggota WAJIB OFFBID. TIM 7 Om Junai patroli. Fokus aksi, bukan orderan.</div>
+      <div class="komando"><strong>5. BUBAR TERTIB 11.00 WITA</strong><br>Bersih-bersih lokasi. Dokumentasi Sofyan. Evaluasi di grup. Balik narik dengan bermartabat.</div>
     </div>
 
-    <div class="card" style="background:#FFF3E0; border:2px solid #FFD700;">
+    <div class="card" style="background:#FFEBEE; border:3px solid #D32F2F;">
       <h2>⚠️ ATURAN AKSI - WAJIB PATUH</h2>
-      <ul style="font-size:0.9rem; padding-left:20px;">
+      <ul style="font-size:0.95rem; padding-left:20px; font-weight:600;">
         <li><b>Anti Anarkis:</b> Tidak merusak fasilitas umum/aplikator</li>
         <li><b>Anti Provokasi:</b> Abaikan pihak yang mancing emosi</li>
         <li><b>Anti Politik:</b> Murni aksi kesejahteraan driver</li>
@@ -190,12 +178,12 @@
   </div>
 
   <div class="footer">
-    <p><b>DOKB BANUA © 2026</b> | DRIVER ONLINE KALSEL BERSATU</p>
-    <p style="margin-top:5px;">
+    <p style="font-size:1rem; font-weight:900;"><b>DOKB BANUA © 2026</b> | DRIVER ONLINE KALSEL BERGERAK</p>
+    <p style="margin-top:8px; font-size:0.9rem;">
       #TolakMaximObral #DriverBermartabat #KalselBergerak #AksiDamai21Mei
     </p>
-    <p style="margin-top:8px; font-size:0.7rem; opacity:0.8;">
-      Dibuat dengan semangat 96 Pasukan. Update terakhir: 16 Mei 2026
+    <p style="margin-top:10px; font-size:0.75rem; opacity:0.9;">
+      "Yang pertama, yang terbaik. Merah Kuning Emas, Warna Perjuangan Kita."
     </p>
   </div>
 
