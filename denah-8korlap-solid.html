@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENAH AKSI DAMAI DOKB BANUA - 8 KORLAP SOLID</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1a1a1a;
+            border: 3px solid #FFD700;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #FFD700;
+            text-align: center;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+        .header {
+            background: #FFD700;
+            color: #111;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .header h1 { color: #111; margin: 0; }
+        .map { width: 100%; border: 2px solid #FFD700; border-radius: 8px; margin: 15px 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #FFD700;
+            padding: 8px;
+            text-align: left;
+        }
+        th { background: #FFD700; color: #111; }
+        .komando {
+            background: #222;
+            border-left: 5px solid #FFD700;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .btn-salinan {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #FFD700;
+            color: #111;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DENAH AKSI DAMAI DOKB BANUA</h1>
+            <h2>Kamis, 21 Mei 2026 | Long March Veteran → Maxim</h2>
+        </div>
+
+        <h2>📍 PETA RUTE AKSI</h2>
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=-3.3186,114.5913&zoom=13&size=600x400&markers=color:red%7Clabel:A%7C-3.320,114.591&markers=color:blue%7Clabel:B%7C-3.317,114.590&key=YOUR_KEY" alt="Peta Rute Veteran ke Maxim" class="map">
+        <p><b>Pin A:</b> Taman Veteran - Titik Apel 07.45 WITA<br>
+        <b>Pin B:</b> Kantor Maxim - Titik Aksi 09.00 WITA</p>
+
+        <h2>💪 STRUKTUR 8 KORLAP SOLID</h2>
+        <table>
+            <tr>
+                <th>KORLAP</th>
+                <th>PLAT</th>
+                <th>PASUKAN</th>
+                <th>TUGAS</th>
+            </tr>
+            <tr><td>1. Ardi</td><td>DA 1650 OC</td><td>12 orang</td><td>Kepala Rombongan</td></tr>
+            <tr><td>2. Raga Saputra</td><td>DA 1531 CS</td><td>12 orang</td><td>Pengaman Depan</td></tr>
+            <tr><td>3. PPBC</td><td>DA 1196 WQ</td><td>12 orang</td><td>Pengaman Kiri</td></tr>
+            <tr><td>4. Vandamme</td><td>DA 1866 TCT</td><td>12 orang</td><td>Pengaman Kanan</td></tr>
+            <tr><td>5. Pakde Kumis</td><td>DA 1460 CI</td><td>12 orang</td><td>Pengaman Belakang</td></tr>
+            <tr><td>6. Haji Ibay</td><td>-</td><td>12 orang</td><td>Tim Logistik</td></tr>
+            <tr><td>7. Om Junai</td><td>-</td><td>12 orang</td><td>Tim Dokumentasi</td></tr>
+            <tr><td>8. Prima</td><td>DA 1607 ZX</td><td>12 orang</td><td>Tim Sapu Bersih</td></tr>
+        </table>
+        <p style="text-align:center;font-weight:bold;">TOTAL: 96 ANGGOTA + 1 KETUM = 97 PEJUANG DOKB</p>
+
+        <div class="komando">
+            <h2>📢 5 KOMANDO KETUM</h2>
+            <ol>
+                <li><b>05.30-07.30</b> Ngebid Subuh A.Yani - Wajib Onbid</li>
+                <li><b>07.45</b> Apel Akbar di Taman Veteran - Absen Ketum</li>
+                <li><b>09.00</b> Long March Tertib ke Kantor Maxim</li>
+                <li><b>11.00</b> Bubarkan Massa, Pastikan Lokasi Bersih</li>
+                <li><b>15.30</b> Ngebid Pasca-Aksi KM 6 & Bandara</li>
+            </ol>
+        </div>
+
+        <div class="komando">
+            <h2>⚠️ ATURAN KERAS KETUM</h2>
+            <ul>
+                <li>WAJIB tertib, tidak anarkis. Ini aksi damai bermartabat.</li>
+                <li>Dilarang keras bawa sajam, miras, atau atribut partai.</li>
+                <li>Dengarkan instruksi 8 Korlap. Satu komando!</li>
+                <li>Yang melanggar = urusan Korlap + Ketum.</li>
+            </ul>
+        </div>
+
+        <button class="btn-salinan" onclick="navigator.clipboard.writeText(window.location.href).then(()=>{alert('Link Denah DOKB Berhasil Disalin!')})">
+            📋 SALIN LINK DENAH INI
+        </button>
+
+        <div class="footer">
+            DOKB BANUA - TEGAS · SOLID · BERMARTABAT 🇮🇩
+        </div>
+    </div>
+</body>
+</html>
