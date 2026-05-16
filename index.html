@@ -8,107 +8,122 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { 
       font-family: 'Segoe UI', Arial, sans-serif; 
-      background: #f5f5f5; 
-      color: #212121;
+      background: #121212; 
+      color: #E0E0E0;
       line-height: 1.6;
     }
     .header {
-      background: #D32F2F;
+      background: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
       color: #FFD700;
-      padding: 20px 15px;
+      padding: 25px 15px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      border-bottom: 4px solid #FFD700;
+      border-bottom: 3px solid #FFD700;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
     }
     .header h1 {
-      font-size: 1.5rem;
-      margin-bottom: 5px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
       font-weight: 900;
+      letter-spacing: 1px;
     }
     .header p {
-      font-size: 0.95rem;
-      opacity: 0.95;
+      font-size: 1rem;
+      color: #BDBDBD;
       font-weight: 600;
     }
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 15px;
+      padding: 20px 15px;
     }
     .card {
-      background: white;
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      border-top: 3px solid #D32F2F;
+      background: #1E1E1E;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      border-top: 2px solid #FFD700;
     }
     .card h2 {
-      color: #B71C1C;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
+      color: #FFD700;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
       border-left: 5px solid #FFD700;
-      padding-left: 10px;
+      padding-left: 12px;
       font-weight: 800;
+      text-transform: uppercase;
     }
     .map-frame {
       width: 100%;
       height: 450px;
-      border: 3px solid #D32F2F;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border: 2px solid #FFD700;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
     th {
-      background: #D32F2F;
+      background: #000000;
       color: #FFD700;
-      padding: 10px 5px;
+      padding: 12px 8px;
       text-align: left;
       font-weight: 800;
+      border-bottom: 2px solid #FFD700;
     }
     td {
-      padding: 8px 5px;
-      border-bottom: 1px solid #eee;
+      padding: 10px 8px;
+      border-bottom: 1px solid #333;
+      color: #E0E0E0;
     }
-    tr:nth-child(even) { background: #FFF9E6; }
+    tr:nth-child(even) { background: #252525; }
     .komando {
-      background: linear-gradient(90deg, #FFF9C4 0%, #FFFDE7 100%);
-      border-left: 5px solid #D32F2F;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      background: #252525;
+      border-left: 4px solid #FFD700;
+      padding: 14px;
+      margin: 12px 0;
+      border-radius: 6px;
     }
-    .komando strong { color: #B71C1C; font-size: 0.95rem; }
+    .komando strong { 
+      color: #FFD700; 
+      font-size: 1rem;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+    }
     .footer {
-      background: #212121;
+      background: #000000;
       color: #FFD700;
       text-align: center;
-      padding: 20px 15px;
-      font-size: 0.85rem;
-      margin-top: 20px;
-      border-top: 4px solid #D32F2F;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+      margin-top: 30px;
+      border-top: 3px solid #FFD700;
     }
     .tag {
       display: inline-block;
       background: #FFD700;
-      color: #B71C1C;
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
+      color: #000000;
+      padding: 6px 14px;
+      border-radius: 25px;
+      font-size: 0.85rem;
       font-weight: 900;
-      margin: 3px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      margin: 4px;
+      box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+    }
+    .highlight {
+      color: #FFD700;
+      font-weight: 700;
+    }
+    .kalsel-grey {
+      color: #9E9E9E;
     }
     @media (max-width: 600px) {
-      .header h1 { font-size: 1.3rem; }
+      .header h1 { font-size: 1.4rem; }
       .map-frame { height: 350px; }
-      table { font-size: 0.75rem; }
+      table { font-size: 0.8rem; }
     }
   </style>
 </head>
@@ -116,8 +131,8 @@
 
   <div class="header">
     <h1>🚕 DOKB BANUA - AKSI DAMAI 21 MEI 2026</h1>
-    <p>DRIVER ONLINE KALSEL BERGERAK | TEGAS SOLID BERMARTABAT</p>
-    <div style="margin-top:10px;">
+    <p>KALSEL BERSATU DRIVER ONLINE | TEGAS SOLID BERMARTABAT</p>
+    <div style="margin-top:12px;">
       <span class="tag">96 PASUKAN</span>
       <span class="tag">8 KORLAP</span>
       <span class="tag">1 KOMANDO</span>
@@ -128,15 +143,15 @@
 
     <div class="card">
       <h2>🗺️ DENAH RUTE LONG MARCH</h2>
-      <p style="font-size:0.9rem; margin-bottom:12px;">
-        <b>Start:</b> Gedung Veteran PH6R+G33 → <b>Finish:</b> Kantor Maxim PH7M+H7<br>
-        <b>Jarak:</b> ±850 Meter | <b>Waktu:</b> 09.00 WITA | <b>Zona Steril:</b> 08.00-11.00 WITA
+      <p style="font-size:0.95rem; margin-bottom:15px;" class="kalsel-grey">
+        <span class="highlight">Start:</span> Gedung Veteran PH6R+G33 → <span class="highlight">Finish:</span> Kantor Maxim PH7M+H7<br>
+        <span class="highlight">Jarak:</span> ±850 Meter | <span class="highlight">Waktu:</span> 09.00 WITA | <span class="highlight">Zona Steril:</span> 08.00-11.00 WITA
       </p>
       <iframe class="map-frame" frameborder="0" allowfullscreen allow="geolocation"
         src="https://umap.openstreetmap.fr/id/map/untitled-map_1407122">
       </iframe>
-      <p style="font-size:0.75rem; margin-top:8px; text-align:center; color:#666;">
-        <b>Klik Pin untuk detail lokasi. Rute emas = Jl. Perdagangan. Anti nabrak masjid!</b>
+      <p style="font-size:0.8rem; margin-top:10px; text-align:center;" class="kalsel-grey">
+        <b class="highlight">Klik Pin untuk detail. Garis Emas = Jl. Perdagangan. Rute Resmi DOKB.</b>
       </p>
     </div>
 
@@ -144,14 +159,14 @@
       <h2>⚔️ 8 KORLAP SOLID - TIM DEPAN</h2>
       <table>
         <tr><th>TIM</th><th>NAMA KORLAP</th><th>NOPOL</th><th>PERAN</th></tr>
-        <tr><td>1</td><td><b>Ardi</b></td><td>DA 1650 OC</td><td>Korlap Utama</td></tr>
-        <tr><td>2</td><td><b>Prima</b></td><td>DA 1607 ZX</td><td>Korlap Mobile</td></tr>
-        <tr><td>3</td><td><b>Baday</b></td><td>DA 1875 AAH</td><td>Korlap Tengah</td></tr>
-        <tr><td>4</td><td><b>Vandamme</b></td><td>DA 1866 TCT</td><td>Korlap Logistik</td></tr>
-        <tr><td>5</td><td><b>Roni</b></td><td>DA 1557 KEK</td><td>Korlap Parkir</td></tr>
-        <tr><td>6</td><td><b>Iyat</b></td><td>DA 1519 XC</td><td>Korlap Belakang</td></tr>
-        <tr><td>7</td><td><b>Om Junai</b></td><td>DA 1576 ZW</td><td>Korlap Keamanan</td></tr>
-        <tr><td>8</td><td><b>Sofyan</b></td><td>DA 1930 ZN</td><td>Korlap Dokumentasi</td></tr>
+        <tr><td>1</td><td><b class="highlight">Ardi</b></td><td>DA 1650 OC</td><td>Korlap Utama</td></tr>
+        <tr><td>2</td><td><b class="highlight">Prima</b></td><td>DA 1607 ZX</td><td>Korlap Mobile</td></tr>
+        <tr><td>3</td><td><b class="highlight">Baday</b></td><td>DA 1875 AAH</td><td>Korlap Tengah</td></tr>
+        <tr><td>4</td><td><b class="highlight">Vandamme</b></td><td>DA 1866 TCT</td><td>Korlap Logistik</td></tr>
+        <tr><td>5</td><td><b class="highlight">Roni</b></td><td>DA 1557 KEK</td><td>Korlap Parkir</td></tr>
+        <tr><td>6</td><td><b class="highlight">Iyat</b></td><td>DA 1519 XC</td><td>Korlap Belakang</td></tr>
+        <tr><td>7</td><td><b class="highlight">Om Junai</b></td><td>DA 1576 ZW</td><td>Korlap Keamanan</td></tr>
+        <tr><td>8</td><td><b class="highlight">Sofyan</b></td><td>DA 1930 ZN</td><td>Korlap Dokumentasi</td></tr>
       </table>
     </div>
 
@@ -164,26 +179,28 @@
       <div class="komando"><strong>5. BUBAR TERTIB 11.00 WITA</strong><br>Bersih-bersih lokasi. Dokumentasi Sofyan. Evaluasi di grup. Balik narik dengan bermartabat.</div>
     </div>
 
-    <div class="card" style="background:#FFEBEE; border:3px solid #D32F2F;">
+    <div class="card" style="background:#1A1A1A; border:2px solid #FFD700;">
       <h2>⚠️ ATURAN AKSI - WAJIB PATUH</h2>
-      <ul style="font-size:0.95rem; padding-left:20px; font-weight:600;">
-        <li><b>Anti Anarkis:</b> Tidak merusak fasilitas umum/aplikator</li>
-        <li><b>Anti Provokasi:</b> Abaikan pihak yang mancing emosi</li>
-        <li><b>Anti Politik:</b> Murni aksi kesejahteraan driver</li>
-        <li><b>Wajib Tertib:</b> Ikuti komando 8 Korlap Solid</li>
-        <li><b>Jaga Nama Baik:</b> DOKB = Driver Bermartabat</li>
+      <ul style="font-size:1rem; padding-left:20px; font-weight:600; color:#E0E0E0;">
+        <li><b class="highlight">Anti Anarkis:</b> Tidak merusak fasilitas umum/aplikator</li>
+        <li><b class="highlight">Anti Provokasi:</b> Abaikan pihak yang mancing emosi</li>
+        <li><b class="highlight">Anti Politik:</b> Murni aksi kesejahteraan driver</li>
+        <li><b class="highlight">Wajib Tertib:</b> Ikuti komando 8 Korlap Solid</li>
+        <li><b class="highlight">Jaga Nama Baik:</b> DOKB = Driver Bermartabat</li>
       </ul>
     </div>
 
   </div>
 
   <div class="footer">
-    <p style="font-size:1rem; font-weight:900;"><b>DOKB BANUA © 2026</b> | DRIVER ONLINE KALSEL BERGERAK</p>
-    <p style="margin-top:8px; font-size:0.9rem;">
+    <p style="font-size:1.1rem; font-weight:900; text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);">
+      <b>DOKB BANUA © 2026</b> | KALSEL BERSATU DRIVER ONLINE
+    </p>
+    <p style="margin-top:10px; font-size:0.95rem; color:#BDBDBD;">
       #TolakMaximObral #DriverBermartabat #KalselBergerak #AksiDamai21Mei
     </p>
-    <p style="margin-top:10px; font-size:0.75rem; opacity:0.9;">
-      "Yang pertama, yang terbaik. Merah Kuning Emas, Warna Perjuangan Kita."
+    <p style="margin-top:12px; font-size:0.8rem; color:#757575;">
+      "Hitam Emas Warna Perjuangan. Solid di Jalan, Bermartabat dalam Tindakan."
     </p>
   </div>
 
